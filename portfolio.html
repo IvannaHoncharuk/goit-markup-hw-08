@@ -53,6 +53,50 @@
                 </li>
             </ul>
         </div>
+        <div class="header__container--mob container">
+            <nav class="navigation">
+                <a class="logo link" href="">Web<span class="logo--black">Studio</span></a>
+                <button type="button" aria-controls="menu-container" class="menu-open-btn">
+                    <svg class="navigation__icons" width="40" height="40">
+                        <use class="navigation__menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="navigation__container mob-menu is-hidden" id="menu-container">
+                    <button type="button" aria-controls="menu-container" class="menu-close-btn">
+                        <svg class="navigation__icons" width="40" height="40">
+                            <use class="navigation__cross" href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+                    <ul class="navigation__list--mob list">
+                        <li class="navigation__item--mob">
+                            <a class="navigation__link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation__item--mob">
+                            <a class="navigation__link current link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="navigation__item--mob">
+                            <a class="navigation__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__connect--all">
+                        <ul class="header__connect--mob list">
+                            <li class="header__contact">
+                                <a class="header__link link mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                            </li>
+                            <li class="header__contact">
+                                <a class="header__link link tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                        <ul class="header__sms list">
+                            <li class="header__site line"><a class="header__messenger link" href="">Instagram</a></li>
+                            <li class="header__site line"><a class="header__messenger link" href="">Twitter</a></li>
+                            <li class="header__site line"><a class="header__messenger link" href="">Facebook</a></li>
+                            <li class="header__site line"><a class="header__messenger link" href=>LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="filters">
@@ -336,7 +380,8 @@
     </main>
 <footer class="footer footer__container">
     <div class="container footer__parts">
-        <div class="footer--first">
+
+        <div class="footer--first part">
             <a class="logo link footer__logo" href="">Web<span class="logo--white">Studio</span></a>
             <address class="footer__section">
                 <ul class="footer__list list">
@@ -353,7 +398,7 @@
                 </ul>
             </address>
         </div>
-        <div class="footer--second">
+        <div class="footer--second part">
             <p class="footer__text">присоединяйтесь</p>
             <ul class="footer__sms list">
                 <li class="footer__site">
@@ -386,7 +431,8 @@
                 </li>
             </ul>
         </div>
-        <div class="footer--third">
+
+        <div class="footer--third part">
             <p class="footer__text">Подпишитесь на рассылку</p>
             <div class="footer__form">
                 <input type="email" name="footer-email" class="footer__email" placeholder="E-mail" />
@@ -400,6 +446,7 @@
         </div>
     </div>
 </footer>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -29,19 +29,34 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__item {
-    width: 450px;
+  @media screen and (max-width: 479.99px) {
+    &__item {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    &__item {
+      width: 450px;
+    }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 30px;
   }
 
-  &__icons {
-    width: 450px;
+  @media screen and (max-width: 449.99px) {
+    &__icons {
+      width: 100%;
+    }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 450px) {
+    &__icons {
+      width: 450px;
+    }
+  }
+  @media screen and (max-width: 767.99px) {
     &__accent {
       text-align: center;
     }
@@ -61,7 +76,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1190px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     &__list {
       flex-wrap: wrap;
       margin-right: -30px;

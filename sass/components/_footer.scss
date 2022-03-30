@@ -72,8 +72,19 @@
     fill: currentColor;
   }
 
+  @media screen and (min-width: 479.99px) {
+    &__email {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199.99px) {
+    &__email {
+      width: 450px;
+    }
+  }
+
   &__email {
-    width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -107,7 +118,7 @@
     margin-left: 10px;
   }
 
-  @media screen and (min-width: 320px) and (max-width: 1190px) {
+  @media screen and (max-width: 1199.99px) {
     .part {
       display: flex;
       flex-direction: column;
@@ -128,7 +139,6 @@
     }
 
     &__email {
-      width: 450px;
       margin-bottom: 20px;
     }
 
@@ -137,7 +147,7 @@
     }
   }
 
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767.99px) {
     &__parts {
       display: flex;
       flex-direction: column;
@@ -145,7 +155,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1190px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     &__parts {
       display: flex;
       flex-wrap: wrap;
@@ -181,6 +191,10 @@
 
     &__form {
       display: flex;
+    }
+
+    &__email {
+      width: 358px;
     }
 
     &__btn {
